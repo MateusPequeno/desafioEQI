@@ -32,12 +32,10 @@ _Clone the project and access the folder_
 
 ```bash
 $ git clone https://github.com/MateusPequeno/desafioEQI.git
-$ cd teste-be
-$ yarn install
-$ yarn dev
-$ cd teste-fe
+$ cd desafioeqi
 $ yarn install
 $ yarn start
+
 ```
 
 _Follow the steps below_
