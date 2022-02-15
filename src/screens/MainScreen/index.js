@@ -19,7 +19,6 @@ import {
 } from "./styles";
 import { Input, ThemeProvider } from "@mui/material";
 import { CardComponent } from "../../components/CardComponent";
-
 import api from "../../services/api";
 
 export const MainScreen = () => {
@@ -57,8 +56,6 @@ export const MainScreen = () => {
   }, []);
   async function calculate() {
     await api.get("/simulacoes").then((res) => {
-      setFinalBrute();
-      console.log(res);
       if (alignment === "brute" && indexValue === "pre") {
         setFinalBrute(res?.data[0]?.valorFinalBruto);
         setFinalLiquid(res?.data[0]?.valorFinalLiquido);
